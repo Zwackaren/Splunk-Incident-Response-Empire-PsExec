@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 This project demonstrates how to ingest, analyze, and detect advanced adversary lateral movement techniques using **Splunk Enterprise**. 
 
-The core of this case study is a **PsExec lateral movement attack** executed via the **Empire post-exploitation framework**, simulated using log data from the [OTRF Security Datasets](https://github.com). 
+The core of this case study is a **PsExec lateral movement attack** executed via the **Empire post-exploitation framework**, simulated using log data from the https://github.com/OTRF/Security-Datasets.
 
 ### The Security Challenge
 Unlike standard automated malware, this attack showcases an adversary attempting to blend into normal network traffic by renaming malicious services to mimic legitimate Windows updates. By analyzing Windows Event Logs and Sysmon data, this project demonstrates my ability to write Splunk Processing Language (SPL) to bypass superficial indicators (like file names) and detect malicious behavior directly in the operating system.
