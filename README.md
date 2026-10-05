@@ -127,6 +127,16 @@ To protect an enterprise network from this type of "Living off the Land" lateral
 2. **Monitor Administrative Shares:** Monitor or restrict access to default administrative shares (`C$`, `ADMIN$`), as these are mandatory requirements for PsExec to pivot.
 3. **Deploy & Configure Sysmon:** Deploy Sysmon with a tailored configuration file (e.g., SwiftOnSecurity) to specifically log and alert on anomalous service executions and parent-child process relationships.
 
+### Lab Scope vs. Enterprise Realism
+While this lab successfully demonstrates detection engineering mechanics for a specific attack vector, it is vital to acknowledge the limitations of isolated laboratory settings compared to a real world corporate environments.
+
+*   **The "Clean Lab" Bias:** In this exercise, the dataset was clean and the attack was highly visible. In a production enterprise, an analyst must battle immense noise, legacy systems, broken log forwarders, and complex network topologies that mask threat actor behaviors.
+*   **The Need for Vulnerability Management:** Real world defense cannot rely solely on reactive SIEM detection. A robust corporate posture requires proactive Vulnerability Management using enterprise grade tooling like Qualys or Tenable to discover, score, and remediate the underlying flaws (such as open SMB shares or misconfigured privileges) before an adversary can exploit them.
+*   **The GRC Framework Alignment:** Technical hunting is only half the battle. True enterprise resilience requires aligning incident response with GRC (Governance, Risk, and Compliance) frameworks. Understanding corporate risk appetite, asset criticality, compliance regulations, and strict Incident Response Playbooks is what transforms a technical alert into an effective corporate defense strategy.
+
+*By documenting this lab, my goal is to push my own training past basic SIEM queries and start thinking about how security operations impact a real corporate network.*
+
+
 ## Final verdict 
 1.  Investigation completed. Threat verified as True Positive (Empire PsExec).   
 2.  Mitre ATT&CK techniques mapped, and documentation updated in README.
