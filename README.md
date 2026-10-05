@@ -15,9 +15,9 @@ Unlike standard automated malware, this attack showcases an adversary attempting
 - **Dataset:** OTRF `empire_psexec_dcerpc_tcp_svcctl.json`
 - **Log Sources:** Windows Event Logs (System, Security) & Microsoft-Windows-Sysmon/Operational
 - **Mapped MITRE ATT&CK Techniques:**
-    - **Execution / Persistence:** [System Services: Service Execution (T1569.002)](https://mitre.org)
-    - **Lateral Movement:** [Remote Services: SMB/Windows Admin Shares (T1021.002)](https://mitre.org)
-    - **Attacker Tooling:** [PsExec (Software S0029)](https://mitre.org) used via PowerShell Empire.
+    - **Execution / Persistence:** https://attack.mitre.org/techniques/T1569/002/
+    - **Lateral Movement:** https://attack.mitre.org/techniques/T1021/002/
+    - **Attacker Tooling:** https://attack.mitre.org/software/S0029/ used via PowerShell Empire.
 
 ---
 
